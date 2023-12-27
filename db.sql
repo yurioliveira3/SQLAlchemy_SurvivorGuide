@@ -1,14 +1,17 @@
 -- SELECT version() -> PostgreSQL 14.10 
 CREATE DATABASE cinema;
 
-CREATE TABLE IF NOT EXISTS filmes (
-    titulo VARCHAR(50) NOT NULL, 
-    genero VARCHAR(30) NOT NULL, 
-    ano INT NOT NULL,
-    PRIMARY KEY(titulo)
+CREATE TABLE IF NOT EXISTS films (
+    title VARCHAR(50) NOT NULL, 
+    genre VARCHAR(30) NOT NULL, 
+    "year" INT NOT NULL,
+    PRIMARY KEY(title)
 );
 
-INSERT INTO filmes (titulo,genero, ano)
+INSERT INTO films (title,genre, "year")
 VALUES('Forest Gump', 'Drama', 1994);
 
-SELECT * FROM filmes;
+SELECT * FROM films;
+
+INSERT INTO films (title,genre, "year")
+VALUES('Scarface', 'Ação', 1983);
