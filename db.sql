@@ -8,10 +8,10 @@ CREATE TABLE IF NOT EXISTS films (
     PRIMARY KEY(title)
 );
 
-INSERT INTO films (title,genre, "year")
-VALUES('Forest Gump', 'Drama', 1994);
+INSERT INTO films (title, genre, "year")
+VALUES ('Forest Gump', 'Drama', 1994);
 
 SELECT * FROM films;
 
-INSERT INTO films (title,genre, "year")
-VALUES('Scarface', 'Ação', 1983);
+INSERT INTO films (title, genre, "year")
+VALUES ('Scarface', 'Ação', 1983);
