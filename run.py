@@ -25,7 +25,6 @@ data_film = flm.select()
 
 data_0_film = flm.select_drama_films()
 
-#print(data_0_film.title)
-#print(data_0_film.actors)
-
 print(data_0_film)
+print(data_0_film.title)
+print(data_0_film.actors)
