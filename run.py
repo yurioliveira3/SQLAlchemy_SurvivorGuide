@@ -21,9 +21,11 @@ act = Actorsrepository()
 
 data_film = flm.select()
 
-print(data_film)
+#print(data_film)
 
-data_0_film = flm.select()[0]
+data_0_film = flm.select_drama_films()
 
-print(data_0_film.title)
-print(data_0_film.actors)
+#print(data_0_film.title)
+#print(data_0_film.actors)
+
+print(data_0_film)
