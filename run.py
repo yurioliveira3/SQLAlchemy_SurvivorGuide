@@ -15,8 +15,9 @@
 #EXAMPLE 3:
 from Infra.repository.films_repository import Filmsrepository
 from Infra.repository.actors_repository import Actorsrepository
+from Infra.configs.connection import DBConnectionHandler
 
-flm = Filmsrepository()
+flm = Filmsrepository(DBConnectionHandler)
 act = Actorsrepository()
 
 data_film = flm.select()
